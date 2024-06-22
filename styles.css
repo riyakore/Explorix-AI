@@ -1,0 +1,121 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header and navigation styles */
+header {
+    background: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Hero section */
+#home {
+    background: #0056b3;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#home h1 {
+    margin: 0;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+#home input[type="text"],
+#home button {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#home button {
+    background-color: #ffc107;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Featured destinations */
+.destination {
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+/* Testimonials */
+#testimonials p {
+    background: #ffffff;
+    border-left: 5px solid #007BFF;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+/* Contact section */
+#contact form {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#contact button {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
