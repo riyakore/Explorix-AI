@@ -5,6 +5,7 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 const Header = () => {
   const pathname = useLocation();
@@ -12,18 +13,24 @@ const Header = () => {
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
+      enablePageScroll();
     } else {
       setOpenNavigation(true);
+      disablePageScroll();
     }
   };
 
   const handleClick = () => {
+    // if the navigation bar is closed
+    if (!openNavigation) return;
+
+    enablePageScroll();
     setOpenNavigation(false);
   };
   return (
     <div
       className={`fixed top-0 left-0 w-full
-     z-50 bg-n-8/90 backdrop-blur-sm border-b
+     z-50 border-b
       border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
@@ -48,6 +55,7 @@ const Header = () => {
          lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+            {/* from index.js */}
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -63,7 +71,7 @@ const Header = () => {
                   item.url === pathname.hash
                     ? "z-2 lg:text-n-1"
                     : "lg:text-n-1/50"
-                }  lg:leading-5 lg:hover:text-n-1  xl:px-12`}
+                }  lg:leading-5 lg:hover:text-color-7  xl:px-12`}
               >
                 {item.title}
               </a>
@@ -73,12 +81,11 @@ const Header = () => {
         </nav>
         <a
           href="#signup"
-          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
+          className="button hidden mr-8 text-n-1/50 transition-colors hover:text-color-7 lg:block"
         >
           New Account
         </a>
-        <Button classname="hidden lg:flex" href="#login">
-          {/* {" "} */}
+        <Button className="hidden lg:flex hover:text-color-7" href="#login">
           Sign In
         </Button>
 
