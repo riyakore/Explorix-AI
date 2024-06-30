@@ -43,6 +43,7 @@ const Benefits = () => {
                 style={{ clipPath: "url(#benefits)" }}
               >
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
+                  {/* if the item has an image url then only */}
                   {item.imageUrl && (
                     <img
                       src={item.imageUrl}
