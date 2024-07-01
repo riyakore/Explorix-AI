@@ -8,7 +8,7 @@ import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
-    <div className="container md:pb-10">
+    <div className="container md:pb-10 mt-20 lg:mt-10">
       <Heading
         className="text-center"
         tag="Ready to get started"
