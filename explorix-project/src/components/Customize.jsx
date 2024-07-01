@@ -1,7 +1,13 @@
+import Header from "./Header";
 import Section from "./Section";
 
 const Customize = () => {
-  return <Section>Customize</Section>;
+  return (
+    <>
+      <Header></Header>
+      <Section>Cutomize</Section>
+    </>
+  );
 };
 
 export default Customize;
