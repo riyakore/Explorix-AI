@@ -7,7 +7,7 @@ import { check2, grid, loading1 } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
-  <Section className="overflow-hidden" id="roadmap">
+  <Section className="overflow-hidden" id="how-to-use">
     <div className="container md:pb-10 mt-20 lg:mt-10">
       <Heading
         className="text-center"

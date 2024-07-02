@@ -6,9 +6,41 @@ const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
-        <p className="caption text-n-4 lg:block">
-          © {new Date().getFullYear()}. All rights reserved.
-        </p>
+        <h3 className=" text-n-4 lg:block">
+          © {new Date().getFullYear()} Explorix. All rights reserved.
+        </h3>
+
+        <div className="flex flex-col items-center">
+          <h3 className=" text-n-4 mb-3">
+            <b>Legal</b>
+          </h3>
+          <h6 className=" text-n-4 mb-3">Terms and Conditions</h6>
+          <h6 className=" text-n-4">Privacy Policy</h6>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <h3 className=" text-n-4 mb-3">
+            <b>Support</b>
+          </h3>
+          <h6 className=" text-n-4 mb-3">
+            <a
+              href="mailto: riyakore1@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Contact Us
+            </a>
+          </h6>
+          <h6 className=" text-n-4">
+            <a
+              href="https://forms.gle/vBoQGVYBd4iUyEUC7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Report An Issue
+            </a>
+          </h6>
+        </div>
 
         <ul className="flex gap-5 flex-wrap">
           {socials.map((item) => (

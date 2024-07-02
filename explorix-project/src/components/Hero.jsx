@@ -9,7 +9,7 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import Customize from "./Customize";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -41,7 +41,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-cyan-500 lg:mb-8">
             Make your customized travel itinerary with us!
           </p>
-          <Button className={`hover:text-color-7`} href="/Customize">
+          <Button className={`hover:text-color-7`} href="/">
             Start Here!
           </Button>
         </div>
