@@ -1,6 +1,6 @@
 import logo from "../assets/logo.png";
 import { navigation } from "../constants";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
@@ -36,7 +36,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="flex items-center w-[12rem] xl:mr-8" href="#hero">
+        <Link to="/" className="flex items-center w-[12rem] xl:mr-8">
           <img
             src={logo}
             style={{ width: "60px", height: "60px" }}
@@ -45,7 +45,7 @@ const Header = () => {
           <span className="text-3xl font-semibold text-white ml-1">
             Explorix
           </span>
-        </a>
+        </Link>
         <nav
           className={`${
             openNavigation ? "flex" : "hidden"
