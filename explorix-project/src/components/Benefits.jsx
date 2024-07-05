@@ -1,7 +1,7 @@
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
-import { GradientLight } from "./design/Benefits";
+import { GradientLight1 } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
@@ -35,7 +35,7 @@ const Benefits = () => {
                 </div>
               </div>
 
-              {item.light && <GradientLight />}
+              {item.light && <GradientLight1 />}
 
               <div
                 className="absolute inset-0.5 bg-n-8"
