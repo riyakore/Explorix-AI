@@ -6,6 +6,9 @@ import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import Roadmap from "./components/Roadmap";
 import Customize from "./components/Customize";
+import TermsAndConditions from "./components/TermsAndConditions";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import SignIn from "./components/SignIn";
 
 const App = () => {
   return (
@@ -25,6 +28,9 @@ const App = () => {
             }
           />
           <Route path="/customize" element={<Customize />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
       </div>
       <ButtonGradient />

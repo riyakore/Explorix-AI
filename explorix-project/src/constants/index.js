@@ -47,16 +47,16 @@ export const navigation = [
     title: "How to use",
     url: "#how-to-use",
   },
-  {
-    id: "4",
-    title: "New account",
-    url: "#signup",
-    onlyMobile: true,
-  },
+  // {
+  //   id: "4",
+  //   title: "New account",
+  //   url: "#signup",
+  //   onlyMobile: true,
+  // },
   {
     id: "5",
     title: "Sign in",
-    url: "#login",
+    // url: "#login",
     onlyMobile: true,
   },
 ];

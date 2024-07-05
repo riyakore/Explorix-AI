@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "./Section";
 import { socials } from "../constants";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,8 +15,12 @@ const Footer = () => {
           <h3 className=" text-n-4 mb-3">
             <b>Legal</b>
           </h3>
-          <h6 className=" text-n-4 mb-3">Terms and Conditions</h6>
-          <h6 className=" text-n-4">Privacy Policy</h6>
+          <Link to="/termsandconditions" className="inline-block">
+            <h6 className=" text-n-4 mb-3">Terms and Conditions</h6>
+          </Link>
+          <Link to="/privacypolicy" className="inline-block">
+            <h6 className=" text-n-4">Privacy Policy</h6>
+          </Link>
         </div>
 
         <div className="flex flex-col items-center">
