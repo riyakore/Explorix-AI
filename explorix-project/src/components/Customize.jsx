@@ -9,6 +9,7 @@ import { GradientLight1 } from "./design/Benefits";
 import { GradientLight2 } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import Footer from "./Footer";
+import DatePicker from "react-datepicker";
 
 const Customize = () => {
   // implement the onSelect implementation
@@ -25,22 +26,38 @@ const Customize = () => {
           <div className="flex flex-col items-center px-32 py-20 mx-28 -my-20">
             <input
               type="text"
-              className="bg-n-8 rounded-lg w-1/2
+              className="bg-n-8 rounded-lg w-72
             lg:w-2/3 h-16 text-n-1 px-5"
               value="Select Your Destination"
             ></input>
             <Button className="mt-4 mb-8 lg:mb-20">Next</Button>
             {/* insert calendar dates api */}
-            <input
+            {/* <input
               type="text"
               className="bg-n-8 rounded-lg lg:-mt-10 w-1/2 lg:w-2/3 h-16 text-n-1 px-5"
               value="Select Your Travel Dates"
+            ></input> */}
+            <div className="flex flex-col items-center text-center">
+              <h1 className="text-n-1 lg:-mt-8 -mx-2 mb-4 lg:mb-0 lg:mx-8">Select Your Travel Dates</h1>
+              <div className="flex flex-row">
+              <input
+              type="text"
+              className="bg-n-8 rounded-lg lg:mt-6 w-48 lg:w-2/3 h-16 text-n-1 px-5 mx-3 lg:mx-6"
+              value="Select Start Date"
             ></input>
+            <input
+              type="text"
+              className="bg-n-8 rounded-lg lg:mt-6 w-48 lg:w-2/3 h-16 text-n-1 px-5 mx-3 lg:mx-6"
+              value="Select End Date"
+            ></input>
+              </div>
+            </div>
             <Button className="mt-4 mb-8 lg:mb-20">Next</Button>
-            <h1 className="text-n-1 lg:-mt-8 text-left ">
+            <h1 className="text-n-1 lg:-mt-8 -mx-2 text-left">
               What kind of things do you want to do?
             </h1>
             {/* maybe add one more div to make a container */}
+            {/* onSelect, it makes the button white */}
             <div className="flex flex-wrap gap-4 mb-8 lg:mb-24 mt-10">
               <Button>Adventurous</Button>
               <Button>Relaxing</Button>
@@ -59,7 +76,7 @@ const Customize = () => {
               className="bg-n-8 rounded-lg lg:-mt-10 w-1/2 lg:w-2/3 h-16 text-n-1 px-5"
               value="How many people are going?"
             ></input>
-            <Button className="mt-15 -mb-16">Customize!</Button>
+            <Button className="mt-15 -mb-16" white>Customize!</Button>
           </div>
         </div>
         <GradientLight1 />
