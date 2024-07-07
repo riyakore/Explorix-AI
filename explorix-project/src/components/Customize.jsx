@@ -10,6 +10,7 @@ import { GradientLight2 } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 import Footer from "./Footer";
 import DatePicker from "react-datepicker";
+import Counter from "./Counter";
 
 const Customize = () => {
   // implement the onSelect implementation
@@ -23,7 +24,8 @@ const Customize = () => {
             className="md:max-w-md lg:max-w-2xl text-center"
             title="Make your travel itinerary with us!"
           ></Heading>
-          <div className="flex flex-col items-center px-32 py-20 mx-28 -my-20">
+          <div className="flex flex-col items-center lg:px-32 py-20 lg:mx-28 -my-20">
+          <h1 className="text-n-1 lg:-mt-8 -mx-2 mb-4 lg:mb-7 lg:mx-8">Select Your Destination</h1>
             <input
               type="text"
               className="bg-n-8 rounded-lg w-72
@@ -38,22 +40,22 @@ const Customize = () => {
               value="Select Your Travel Dates"
             ></input> */}
             <div className="flex flex-col items-center text-center">
-              <h1 className="text-n-1 lg:-mt-8 -mx-2 mb-4 lg:mb-0 lg:mx-8">Select Your Travel Dates</h1>
+              <h1 className="text-n-1 mt-10 lg:-mt-8 -mx-2 mb-4 lg:mb-0 lg:mx-8">Select Your Travel Dates</h1>
               <div className="flex flex-row">
               <input
               type="text"
-              className="bg-n-8 rounded-lg lg:mt-6 w-48 lg:w-2/3 h-16 text-n-1 px-5 mx-3 lg:mx-6"
-              value="Select Start Date"
+              className="bg-n-8 rounded-lg lg:mt-6 w-40 lg:w-2/3 h-16 text-n-1 px-5 mx-3 lg:mx-6"
+              value="Start"
             ></input>
             <input
               type="text"
-              className="bg-n-8 rounded-lg lg:mt-6 w-48 lg:w-2/3 h-16 text-n-1 px-5 mx-3 lg:mx-6"
-              value="Select End Date"
+              className="bg-n-8 rounded-lg lg:mt-6 w-40 lg:w-2/3 h-16 text-n-1 px-5 mx-3 lg:mx-6"
+              value="End"
             ></input>
               </div>
             </div>
             <Button className="mt-4 mb-8 lg:mb-20">Next</Button>
-            <h1 className="text-n-1 lg:-mt-8 -mx-2 text-left">
+            <h1 className="text-n-1 mt-10 lg:-mt-8 -mx-2 text-left">
               What kind of things do you want to do?
             </h1>
             {/* maybe add one more div to make a container */}
@@ -71,12 +73,14 @@ const Customize = () => {
               <Button>Known For</Button>
             </div>
             {/* figure out a way to add text to the right of the input box */}
-            <input
+            {/* <input
               type="text"
-              className="bg-n-8 rounded-lg lg:-mt-10 w-1/2 lg:w-2/3 h-16 text-n-1 px-5"
+              className="bg-n-8 rounded-lg mt-10 lg:-mt-10 w-5/6 lg:w-2/3 h-16 text-n-1 px-5"
               value="How many people are going?"
-            ></input>
-            <Button className="mt-15 -mb-16" white>Customize!</Button>
+            ></input> */}
+            <h1 className="text-n-1 mt-10 lg:-mt-10 mb-7">How many people are going?</h1>
+            <Counter />  {/* Use the Counter component here */}
+            <Button className="mt-15 lg:-mb-16 mb-10" white>Customize!</Button>
           </div>
         </div>
         <GradientLight1 />
