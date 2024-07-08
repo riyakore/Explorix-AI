@@ -11,11 +11,15 @@ import ClipPath from "../assets/svg/ClipPath";
 import Footer from "./Footer";
 import DatePicker from "react-datepicker";
 import Counter from "./Counter";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Customize = () => {
   // implement the onSelect implementation
   // add calendar api
   // add drop down for destinations and give a list of destinations to select from
+
+  
+
   return (
     <>
       <Section crosses>
@@ -34,11 +38,6 @@ const Customize = () => {
             ></input>
             <Button className="mt-4 mb-8 lg:mb-20">Next</Button>
             {/* insert calendar dates api */}
-            {/* <input
-              type="text"
-              className="bg-n-8 rounded-lg lg:-mt-10 w-1/2 lg:w-2/3 h-16 text-n-1 px-5"
-              value="Select Your Travel Dates"
-            ></input> */}
             <div className="flex flex-col items-center text-center">
               <h1 className="text-n-1 mt-10 lg:-mt-8 -mx-2 mb-4 lg:mb-0 lg:mx-8">Select Your Travel Dates</h1>
               <div className="flex flex-row">
@@ -79,7 +78,7 @@ const Customize = () => {
               value="How many people are going?"
             ></input> */}
             <h1 className="text-n-1 mt-10 lg:-mt-10 mb-7">How many people are going?</h1>
-            <Counter />  {/* Use the Counter component here */}
+            <Counter />
             <Button className="mt-15 lg:-mb-16 mb-10" white>Customize!</Button>
           </div>
         </div>
