@@ -12,12 +12,22 @@ import Footer from "./Footer";
 import DatePicker from "react-datepicker";
 import Counter from "./Counter";
 import "react-datepicker/dist/react-datepicker.css";
+import React, { useState } from "react";
+import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Customize = () => {
   // implement the onSelect implementation
   // add calendar api
   // add drop down for destinations and give a list of destinations to select from
+  const [selectedButtons, setSelectedButtons] = useState([]);
 
+  const handleButtonClick = (label) => {
+    setSelectedButtons((prevSelectedButtons) =>
+      prevSelectedButtons.includes(label)
+        ? prevSelectedButtons.filter((item) => item !== label)
+        : [...prevSelectedButtons, label]
+    );
+  };
   
 
   return (
@@ -59,7 +69,7 @@ const Customize = () => {
             </h1>
             {/* maybe add one more div to make a container */}
             {/* onSelect, it makes the button white */}
-            <div className="flex flex-wrap gap-4 mb-8 lg:mb-24 mt-10">
+            {/* <div className="flex flex-wrap gap-4 mb-8 lg:mb-24 mt-10">
               <Button>Adventurous</Button>
               <Button>Relaxing</Button>
               <Button>Staycation</Button>
@@ -70,6 +80,18 @@ const Customize = () => {
               <Button>Cultural</Button>
               <Button>Touristy</Button>
               <Button>Known For</Button>
+            </div> */}
+
+            <div className="flex flex-wrap gap-4 mb-8 lg:mb-24 mt-10">
+              {["Adventurous", "Relaxing", "Staycation", "Shopping", "Family Friendly", "Activities for Kids", "Religious", "Cultural", "Touristy", "Known For"].map((label) => (
+                <Button
+                  key={label}
+                  onClick={() => handleButtonClick(label)}
+                  selected={selectedButtons.includes(label)}
+                >
+                  {label}
+                </Button>
+              ))}
             </div>
             {/* figure out a way to add text to the right of the input box */}
             {/* <input
