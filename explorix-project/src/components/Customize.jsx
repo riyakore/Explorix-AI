@@ -108,13 +108,6 @@ const Customize = () => {
             </Button>
             ))}
           </div>
-
-            {/* figure out a way to add text to the right of the input box */}
-            {/* <input
-              type="text"
-              className="bg-n-8 rounded-lg mt-10 lg:-mt-10 w-5/6 lg:w-2/3 h-16 text-n-1 px-5"
-              value="How many people are going?"
-            ></input> */}
             <h1 className="text-n-1 mt-10 lg:-mt-10 mb-7">How many people are going?</h1>
             <Counter />
             <Button className="mt-15 lg:-mb-16 mb-10" white>Customize!</Button>
