@@ -5,6 +5,12 @@ import { Link } from 'react-router-dom';
 import Button from './Button';
 
 const SignUp = () => {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [retype, setRetype] = useState("");
+
   return (
     <Section className="pt-[9rem] -mt-[5.25rem]"
     crosses
@@ -16,10 +22,34 @@ const SignUp = () => {
             <div className="relative bg-n-8 rounded-[1rem] p-7">
               <h1 className="h4 text-center text-n-1">Make A New Account</h1>
               <div className="flex flex-col items-center">
-                <input className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" type="text" value="Name"></input>
-                <input className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" type="text" value="Email"></input>
-                <input className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" type="text" value="Password"></input>
-                <input className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" type="text" value="Retype Password"></input>
+                <input 
+                className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" 
+                type="text" 
+                placeholder="Name"
+                value={name}
+                onChange = {(e) => setName(e.target.value)}
+                ></input>
+                <input 
+                className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" 
+                type="text" 
+                placeholder="Email"
+                value={email}
+                onChange = {(e) => setEmail(e.target.value)}
+                ></input>
+                <input 
+                className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" 
+                type="text" 
+                placeholder="Password"
+                value={password}
+                onChange = {(e) => setPassword(e.target.value)}
+                ></input>
+                <input 
+                className="bg-n-4 mt-8 w-1/2 h-12 px-3 rounded-md" 
+                type="text" 
+                placeholder="Retype Password"
+                value={retype}
+                onChange = {(e) => setRetype(e.target.value)}
+                ></input>
                 <Button className="mt-8">Sign Up</Button>
                 <p className="mt-6">Already have an Account? {` `}
                 <Link to="/signin" className="inline-block"><u> Sign In </u></Link>
