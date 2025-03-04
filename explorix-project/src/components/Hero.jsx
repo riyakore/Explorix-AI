@@ -65,7 +65,7 @@ const Hero = () => {
 
                 {/* <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2"></Generating> */}
                 {/* the left scrolling thing from the robot image */}
-                <ScrollParallax isAbsolutelyPositioned>
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
                       <li className="p-5 key={index}">
@@ -73,13 +73,13 @@ const Hero = () => {
                       </li>
                     ))}
                   </ul>
-                </ScrollParallax>
-                <ScrollParallax isAbsolutelyPositioned>
+                </ScrollParallax> */}
+                {/* <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
                     title="Code Generation"
                   />
-                </ScrollParallax>
+                </ScrollParallax> */}
               </div>
             </div>
             <Gradient />
@@ -96,7 +96,7 @@ const Hero = () => {
 
           <BackgroundCircles />
         </div>
-        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
+        {/* <CompanyLogos className="hidden relative z-10 mt-20 lg:block" /> */}
       </div>
       <BottomLine></BottomLine>
     </Section>
