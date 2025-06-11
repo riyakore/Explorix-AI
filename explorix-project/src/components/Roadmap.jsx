@@ -1,9 +1,9 @@
-import Button from "./Button";
+// import Button from "./Button";
 import Heading from "./Heading";
 import Section from "./Section";
-import Tagline from "./Tagline";
+// import Tagline from "./Tagline";
 import { roadmap } from "../constants";
-import { check2, grid, loading1 } from "../assets";
+import { grid } from "../assets";
 import { Gradient } from "./design/Roadmap";
 
 const Roadmap = () => (
@@ -16,8 +16,19 @@ const Roadmap = () => (
       />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
-        {roadmap.map((item) => {
-          //   const status = item.status === "done" ? "Done" : "In progress";
+        {roadmap.map((item, idx) => {
+          // idx: 0 = first, 1 = second, 2 = third, 3 = fourth
+          let imageClass = "w-full";
+          if (idx === 1) {
+            // Second image: make it just a little bit smaller than before
+            imageClass = "w-[90%] max-w-[340px] mx-auto";
+          } else if (idx === 2) {
+            // Third image: just a little bit bigger than before
+            imageClass = "w-[90%] max-w-[290px] mx-auto";
+          } else if (idx === 3) {
+            // Fourth image (SVG): make it a little bit bigger than before
+            imageClass = "w-[90%] max-w-[340px] mx-auto";
+          }
 
           return (
             <div
@@ -39,9 +50,9 @@ const Roadmap = () => (
                 <div className="relative z-1">
                   <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20"></div>
 
-                  <div className="mb-10 -my-10 -mx-15">
+                  <div className="mb-10 -my-10 -mx-15 flex justify-center">
                     <img
-                      className="w-full"
+                      className={imageClass}
                       src={item.imageUrl}
                       width={628}
                       height={426}

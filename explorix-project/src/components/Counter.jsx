@@ -1,3 +1,5 @@
+// This is the component for the counter that counts how many people are going in the customize page
+
 import React, {useState} from 'react';
 
 const Counter = () => {

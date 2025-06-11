@@ -1,4 +1,5 @@
-// just type rafce
+// Use this for any buttons used on this website
+
 import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Button = ({ className, href, onClick, children, px, white, isSelected }) => {

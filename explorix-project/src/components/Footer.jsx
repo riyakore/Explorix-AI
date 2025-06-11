@@ -1,3 +1,5 @@
+// this displays the footer of the website which has the privacy policy and terms and conditions
+
 import React from "react";
 import Section from "./Section";
 import { socials } from "../constants";
@@ -8,7 +10,7 @@ const Footer = () => {
     <Section crosses className="!px-0 !py-10">
       <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
         <h3 className=" text-n-4 lg:block">
-          © {new Date().getFullYear()} Explorix. All rights reserved.
+          © {new Date().getFullYear()} Explorix AI. All rights reserved.
         </h3>
 
         <div className="flex flex-col items-center">

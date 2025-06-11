@@ -1,14 +1,17 @@
-import { curve, robot, heroBackground } from "../assets";
+// this is the first part of the main page of the website
+
+import { curve, robot, gradient } from "../assets";
 import Section from "./Section";
 import Button from "./Button";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { heroIcons } from "../constants";
-import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
-import Generating from "./Generating";
-import Notification from "./Notification";
-import CompanyLogos from "./CompanyLogos";
 import { Link } from "react-router-dom";
+
+// unused import statements but can be used in the future
+// import { ScrollParallax } from "react-just-parallax";
+// import Generating from "./Generating";
+// import Notification from "./Notification";
+// import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -80,14 +83,16 @@ const Hero = () => {
                     title="Code Generation"
                   />
                 </ScrollParallax> */}
+
+                
               </div>
             </div>
             <Gradient />
           </div>
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
-              src={heroBackground}
-              className="w-full"
+              src={gradient}
+              className="w-full opacity-60"
               width={1440}
               height={1800}
               alt="hero"

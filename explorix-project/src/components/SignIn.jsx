@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Button from "./Button";
-import { GradientLight1, GradientLight2 } from "./design/Benefits";
 import Footer from "./Footer";
-import Heading from "./Heading";
 import Section from "./Section";
-import TagLine from "./Tagline";
 import { Link } from "react-router-dom";
+
+// unused import statements, could be used later
+// import { GradientLight1, GradientLight2 } from "./design/Benefits";
+// import Heading from "./Heading";
 
 const SignIn = () => {
 

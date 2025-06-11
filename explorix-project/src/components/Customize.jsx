@@ -1,19 +1,20 @@
-import Header from "./Header";
+// This is the page where users can add in their travel information.
+
 import Section from "./Section";
 import Heading from "./Heading";
 import Button from "./Button";
-import { BackgroundCircles, Rings } from "./design/Header";
-import { Gradient } from "./design/Hero";
-import { benefits } from "../constants";
+// import { BackgroundCircles, Rings } from "./design/Header";
+// import { Gradient } from "./design/Hero";
+// import { benefits } from "../constants";
 import { GradientLight1 } from "./design/Benefits";
 import { GradientLight2 } from "./design/Benefits";
-import ClipPath from "../assets/svg/ClipPath";
+// import ClipPath from "../assets/svg/ClipPath";
 import Footer from "./Footer";
 import DatePicker from "react-datepicker";
 import Counter from "./Counter";
 import "react-datepicker/dist/react-datepicker.css";
 import React, { useState } from "react";
-import ButtonSvg from "../assets/svg/ButtonSvg";
+// import ButtonSvg from "../assets/svg/ButtonSvg";
 
 const Customize = () => {
   // add calendar api
@@ -110,7 +111,7 @@ const Customize = () => {
           </div>
             <h1 className="text-n-1 mt-10 lg:-mt-10 mb-7">How many people are going?</h1>
             <Counter />
-            <Button className="mt-15 lg:-mb-16 mb-10" white>Customize!</Button>
+            <Button className="mt-15 lg:-mb-16 mb-10" white>Generate!</Button>
           </div>
         </div>
         <GradientLight1 />
