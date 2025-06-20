@@ -6,6 +6,6 @@ I am a huge fan of traveling! Having been to more than 25 countries, one of the 
 
 ## Tech Stack
 The source code for the entire website is available in this repository.
-Frontend: Reach + Vite
-Backend: Django (Python makes it easier to work with ML Models)
-Database: MongoDB
+- Frontend: Reach + Vite
+- Backend: Django (Python makes it easier to work with ML Models)
+- Database: MongoDB
